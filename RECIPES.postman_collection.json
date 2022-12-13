@@ -1,0 +1,862 @@
+{
+	"info": {
+		"_postman_id": "286b27d2-8c4f-4ab5-a6b4-7ff2b24a7b1d",
+		"name": "RECIPES",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3458566"
+	},
+	"item": [
+		{
+			"name": "list all recipes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/recipe",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"recipe"
+					]
+				},
+				"description": "listAll"
+			},
+			"response": [
+				{
+					"name": "list all recipes",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/recipe",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"recipe"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Dec 2022 13:39:15 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"description\": \"Omelet with cheese recipe\",\n        \"name\": \"Omelet\",\n        \"vegetarian\": false,\n        \"servingFor\": 2,\n        \"ingredients\": [\n            {\n                \"id\": 1,\n                \"itemName\": \"Egg\",\n                \"description\": \"Fresh eggs\",\n                \"amount\": 4,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 2,\n                \"itemName\": \"Oil\",\n                \"description\": \"Margarine or sun flower oil\",\n                \"amount\": 2,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 3,\n                \"itemName\": \"Cheese\",\n                \"description\": \"Any type cheese would do.Cheddar is the best\",\n                \"amount\": 50,\n                \"amountType\": \"GRAM\"\n            },\n            {\n                \"id\": 4,\n                \"itemName\": \"Salt\",\n                \"description\": \"Salt\",\n                \"amount\": 1,\n                \"amountType\": \"TEASPOON\"\n            }\n        ],\n        \"instructions\": [\n            {\n                \"id\": 1,\n                \"description\": \"Heat the pan on the stove.\",\n                \"sequence\": 1\n            },\n            {\n                \"id\": 2,\n                \"description\": \"Add Oil to the pan.\",\n                \"sequence\": 2\n            },\n            {\n                \"id\": 3,\n                \"description\": \"Slice the cheese into small pieces.\",\n                \"sequence\": 3\n            },\n            {\n                \"id\": 4,\n                \"description\": \"Add cheese into the pan. Wait for it to melt.\",\n                \"sequence\": 4\n            },\n            {\n                \"id\": 5,\n                \"description\": \"Break the eggs into the pan carefully\",\n                \"sequence\": 5\n            },\n            {\n                \"id\": 6,\n                \"description\": \"Cook 3-5 mins on slight fire.\",\n                \"sequence\": 6\n            },\n            {\n                \"id\": 7,\n                \"description\": \"After that take is from the fire. Add salt. And serve. Bon appetit!\",\n                \"sequence\": 7\n            }\n        ]\n    },\n    {\n        \"id\": 2,\n        \"description\": \"This Oven Baked Salmon is brushed with garlic butter, then sprinkled with a delicious brown sugar spice mix for the perfectly baked, flavorful salmon fillet. This is hands-down the best and easiest way to prepare salmon fillet for dinner!\",\n        \"name\": \"Oven Baked Salmon\",\n        \"vegetarian\": false,\n        \"servingFor\": 4,\n        \"ingredients\": [\n            {\n                \"id\": 5,\n                \"itemName\": \"Salmon\",\n                \"description\": \"A whole Salmon fillet with skin on is recommended!\",\n                \"amount\": 1,\n                \"amountType\": \"KILOGRAM\"\n            },\n            {\n                \"id\": 6,\n                \"itemName\": \"Butter\",\n                \"description\": \"Alternatively olive oil can do too\",\n                \"amount\": 3,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 7,\n                \"itemName\": \"Brown sugar\",\n                \"description\": \"It can be skipped\",\n                \"amount\": 0.5,\n                \"amountType\": \"TEASPOON\"\n            },\n            {\n                \"id\": 8,\n                \"itemName\": \"Garlic\",\n                \"description\": \"Garlic to have unique taste\",\n                \"amount\": 1,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 9,\n                \"itemName\": \"Italian seasoning\",\n                \"description\": \"It can be replaced by other veggies. Oregon or rosemary \",\n                \"amount\": 1,\n                \"amountType\": \"TABLESPOON\"\n            }\n        ],\n        \"instructions\": [\n            {\n                \"id\": 8,\n                \"description\": \"Place the salmon on a piece of foil set on a rimmed baking sheet. Fold the sides slightly up around the salmon, to catch any dripping butter. Combine the minced garlic with the melted butter. Brush about half of it over the salmon.\",\n                \"sequence\": 1\n            },\n            {\n                \"id\": 9,\n                \"description\": \"Combine the spices, then sprinkle them evenly over the salmon. Drizzle with the remaining garlic butter.\",\n                \"sequence\": 2\n            },\n            {\n                \"id\": 10,\n                \"description\": \"Bake the salmon at 375°F for about 15-20 minutes, depending on your preferred doneness. The fish is done when it flakes easily, but is still glossy/shiny – not dull. See further below for some temperature references.\",\n                \"sequence\": 3\n            }\n        ]\n    },\n    {\n        \"id\": 3,\n        \"description\": \"This shrimp kebab recipe is perfectly grilled with garlic lemon butter marinade.\",\n        \"name\": \"Shrimp Kebab\",\n        \"vegetarian\": false,\n        \"servingFor\": 4,\n        \"ingredients\": [\n            {\n                \"id\": 10,\n                \"itemName\": \"Shrimp\",\n                \"description\": \"Any type of shrimps would be recommended .Frozen, shelled, deveined and tail-on shrimps.\",\n                \"amount\": 500,\n                \"amountType\": \"GRAM\"\n            },\n            {\n                \"id\": 11,\n                \"itemName\": \"Garlic\",\n                \"description\": \"A well dried garlic\",\n                \"amount\": 1,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 12,\n                \"itemName\": \"Butter\",\n                \"description\": \"Replaceable with olive oil\",\n                \"amount\": 2,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 13,\n                \"itemName\": \"Lemon\",\n                \"description\": \"A good big juicy lemon\",\n                \"amount\": 1,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 14,\n                \"itemName\": \"Cayenne Pepper\",\n                \"description\": \"Peppers to decorate with veggies\",\n                \"amount\": 3,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 15,\n                \"itemName\": \"Parsley\",\n                \"description\": \"Decoration vegetables\",\n                \"amount\": 3,\n                \"amountType\": \"PIECE\"\n            }\n        ],\n        \"instructions\": [\n            {\n                \"id\": 11,\n                \"description\": \"Coat and marinate the garlic butter mixture on the shrimp, thread them on skewers or bamboo sticks.\",\n                \"sequence\": 1\n            },\n            {\n                \"id\": 12,\n                \"description\": \"Use indirect heat, it will take 2-3 minutes to cook the entire shrimp, on both sides.\",\n                \"sequence\": 2\n            }\n        ]\n    },\n    {\n        \"id\": 4,\n        \"description\": \"Get children to help you chop the vegetables and make the sauce for this colourful, simple tofu stir-fry. It is perfect when you need a quick and easy family meal\",\n        \"name\": \"Tofu stir-fry\",\n        \"vegetarian\": true,\n        \"servingFor\": 3,\n        \"ingredients\": [\n            {\n                \"id\": 16,\n                \"itemName\": \"Soy Sauce\",\n                \"description\": \"Low-sodium\",\n                \"amount\": 3,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 17,\n                \"itemName\": \"Honey\",\n                \"description\": \"Honey\",\n                \"amount\": 1.5,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 18,\n                \"itemName\": \"white wine vinegar\",\n                \"description\": \"white wine vinegar\",\n                \"amount\": 1,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 19,\n                \"itemName\": \"tofu\",\n                \"description\": \"tofu, cut into chunks\",\n                \"amount\": 300,\n                \"amountType\": \"GRAM\"\n            },\n            {\n                \"id\": 20,\n                \"itemName\": \"sunflower oil\",\n                \"description\": \"sunflower oil\",\n                \"amount\": 2,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 21,\n                \"itemName\": \"garlic\",\n                \"description\": \"garlic cloves, sliced\",\n                \"amount\": 2,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 22,\n                \"itemName\": \"ginger\",\n                \"description\": \"ginger\",\n                \"amount\": 50,\n                \"amountType\": \"GRAM\"\n            },\n            {\n                \"id\": 23,\n                \"itemName\": \"carrot\",\n                \"description\": \"medium size carrots, sliced into thin batons\",\n                \"amount\": 2,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 24,\n                \"itemName\": \"broccoli\",\n                \"description\": \"broccoli, cut into small florets\",\n                \"amount\": 300,\n                \"amountType\": \"GRAM\"\n            },\n            {\n                \"id\": 25,\n                \"itemName\": \"red pepper\",\n                \"description\": \"red pepper, sliced into strips\",\n                \"amount\": 1,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 26,\n                \"itemName\": \"cornflour\",\n                \"description\": \"cornflour\",\n                \"amount\": 1,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 27,\n                \"itemName\": \"spring onion\",\n                \"description\": \"spring onion, sliced\",\n                \"amount\": 1,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 28,\n                \"itemName\": \"sesame\",\n                \"description\": \"sesame seeds\",\n                \"amount\": 2,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 29,\n                \"itemName\": \"coriander\",\n                \"description\": \"small bunch of coriander, chopped\",\n                \"amount\": 50,\n                \"amountType\": \"GRAM\"\n            }\n        ],\n        \"instructions\": [\n            {\n                \"id\": 13,\n                \"description\": \"Stir together the soy sauce, honey and vinegar in a bowl, then set aside.\",\n                \"sequence\": 1\n            },\n            {\n                \"id\": 14,\n                \"description\": \"Pat the tofu chunks dry, then season well. Heat half the oil in a wok or large frying pan over a high heat. Fry the tofu for 5 mins until golden, stirring occasionally. Add the garlic and ginger and fry for 1 min more. Tip the tofu mixture into a bowl, pour over half the soy dressing and set aside.\",\n                \"sequence\": 2\n            },\n            {\n                \"id\": 15,\n                \"description\": \"Add the remaining oil to the wok. Add the vegetables and cook for 5 mins until beginning to turn golden, then add a good splash of water and cook for 3-5 mins more until tender.\",\n                \"sequence\": 3\n            },\n            {\n                \"id\": 16,\n                \"description\": \"Stir the cornflour and 1 tbsp water into the remaining soy dressing, then tip into the wok, allow to bubble for 30 seconds, stirring to coat everything in the sauce. Sprinkle over the spring onion, sesame seeds and coriander. Serve with rice.\",\n                \"sequence\": 4\n            }\n        ]\n    },\n    {\n        \"id\": 5,\n        \"description\": \"Whip up this tasty vegetarian gnocchi in just 15 minutes. Broccoli, peas and pine nuts combine with crème fraîche and mustard for a tasty midweek meal\",\n        \"name\": \"Creamy broccoli gnocchi\",\n        \"vegetarian\": true,\n        \"servingFor\": 2,\n        \"ingredients\": [\n            {\n                \"id\": 30,\n                \"itemName\": \"crème fraîche\",\n                \"description\": \"crème fraîche\",\n                \"amount\": 3,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 31,\n                \"itemName\": \"Dijon mustard\",\n                \"description\": \"Dijon mustard\",\n                \"amount\": 3,\n                \"amountType\": \"TEASPOON\"\n            },\n            {\n                \"id\": 32,\n                \"itemName\": \"Lemon\",\n                \"description\": \"zested and juiced\",\n                \"amount\": 0.5,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 33,\n                \"itemName\": \"broccoli\",\n                \"description\": \"long-stem broccoli, each cut into 3 pieces\",\n                \"amount\": 200,\n                \"amountType\": \"GRAM\"\n            },\n            {\n                \"id\": 34,\n                \"itemName\": \"gnocchi\",\n                \"description\": \"fresh gnocchi\",\n                \"amount\": 350,\n                \"amountType\": \"GRAM\"\n            },\n            {\n                \"id\": 35,\n                \"itemName\": \"olive oil\",\n                \"description\": \"olive oil\",\n                \"amount\": 2,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 36,\n                \"itemName\": \"pea\",\n                \"description\": \"frozen peas\",\n                \"amount\": 100,\n                \"amountType\": \"GRAM\"\n            },\n            {\n                \"id\": 37,\n                \"itemName\": \"nut\",\n                \"description\": \"toasted pine nuts\",\n                \"amount\": 1,\n                \"amountType\": \"TABLESPOON\"\n            }\n        ],\n        \"instructions\": [\n            {\n                \"id\": 17,\n                \"description\": \"Mix together the crème fraîche, mustard and lemon juice. Set aside. Bring a large pan of salted water to the boil. Once boiling, add the broccoli and cook for 3 mins, then tip in the gnocchi. Cook until the gnocchi begins to float to the surface, this will only take 1 min so keep an eye on them, then drain.\",\n                \"sequence\": 1\n            },\n            {\n                \"id\": 18,\n                \"description\": \"Heat the oil in a large non-stick frying pan and, once hot, tip in the gnocchi, broccoli and frozen peas. Toss around in the hot oil for 1 min, then stir through the crème fraîche mixture. Season to taste. Once hot, spoon into bowls and top with the lemon zest and pine nuts.\",\n                \"sequence\": 21\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "list vegetarian recipes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/recipe?vegetarian=true",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"recipe"
+					],
+					"query": [
+						{
+							"key": "vegetarian",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "list vegetarian recipes",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/recipe?vegetarian=true",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"recipe"
+							],
+							"query": [
+								{
+									"key": "vegetarian",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Dec 2022 13:39:34 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 4,\n        \"description\": \"Get children to help you chop the vegetables and make the sauce for this colourful, simple tofu stir-fry. It is perfect when you need a quick and easy family meal\",\n        \"name\": \"Tofu stir-fry\",\n        \"vegetarian\": true,\n        \"servingFor\": 3,\n        \"ingredients\": [\n            {\n                \"id\": 16,\n                \"itemName\": \"Soy Sauce\",\n                \"description\": \"Low-sodium\",\n                \"amount\": 3,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 17,\n                \"itemName\": \"Honey\",\n                \"description\": \"Honey\",\n                \"amount\": 1.5,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 18,\n                \"itemName\": \"white wine vinegar\",\n                \"description\": \"white wine vinegar\",\n                \"amount\": 1,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 19,\n                \"itemName\": \"tofu\",\n                \"description\": \"tofu, cut into chunks\",\n                \"amount\": 300,\n                \"amountType\": \"GRAM\"\n            },\n            {\n                \"id\": 20,\n                \"itemName\": \"sunflower oil\",\n                \"description\": \"sunflower oil\",\n                \"amount\": 2,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 21,\n                \"itemName\": \"garlic\",\n                \"description\": \"garlic cloves, sliced\",\n                \"amount\": 2,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 22,\n                \"itemName\": \"ginger\",\n                \"description\": \"ginger\",\n                \"amount\": 50,\n                \"amountType\": \"GRAM\"\n            },\n            {\n                \"id\": 23,\n                \"itemName\": \"carrot\",\n                \"description\": \"medium size carrots, sliced into thin batons\",\n                \"amount\": 2,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 24,\n                \"itemName\": \"broccoli\",\n                \"description\": \"broccoli, cut into small florets\",\n                \"amount\": 300,\n                \"amountType\": \"GRAM\"\n            },\n            {\n                \"id\": 25,\n                \"itemName\": \"red pepper\",\n                \"description\": \"red pepper, sliced into strips\",\n                \"amount\": 1,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 26,\n                \"itemName\": \"cornflour\",\n                \"description\": \"cornflour\",\n                \"amount\": 1,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 27,\n                \"itemName\": \"spring onion\",\n                \"description\": \"spring onion, sliced\",\n                \"amount\": 1,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 28,\n                \"itemName\": \"sesame\",\n                \"description\": \"sesame seeds\",\n                \"amount\": 2,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 29,\n                \"itemName\": \"coriander\",\n                \"description\": \"small bunch of coriander, chopped\",\n                \"amount\": 50,\n                \"amountType\": \"GRAM\"\n            }\n        ],\n        \"instructions\": [\n            {\n                \"id\": 13,\n                \"description\": \"Stir together the soy sauce, honey and vinegar in a bowl, then set aside.\",\n                \"sequence\": 1\n            },\n            {\n                \"id\": 14,\n                \"description\": \"Pat the tofu chunks dry, then season well. Heat half the oil in a wok or large frying pan over a high heat. Fry the tofu for 5 mins until golden, stirring occasionally. Add the garlic and ginger and fry for 1 min more. Tip the tofu mixture into a bowl, pour over half the soy dressing and set aside.\",\n                \"sequence\": 2\n            },\n            {\n                \"id\": 15,\n                \"description\": \"Add the remaining oil to the wok. Add the vegetables and cook for 5 mins until beginning to turn golden, then add a good splash of water and cook for 3-5 mins more until tender.\",\n                \"sequence\": 3\n            },\n            {\n                \"id\": 16,\n                \"description\": \"Stir the cornflour and 1 tbsp water into the remaining soy dressing, then tip into the wok, allow to bubble for 30 seconds, stirring to coat everything in the sauce. Sprinkle over the spring onion, sesame seeds and coriander. Serve with rice.\",\n                \"sequence\": 4\n            }\n        ]\n    },\n    {\n        \"id\": 5,\n        \"description\": \"Whip up this tasty vegetarian gnocchi in just 15 minutes. Broccoli, peas and pine nuts combine with crème fraîche and mustard for a tasty midweek meal\",\n        \"name\": \"Creamy broccoli gnocchi\",\n        \"vegetarian\": true,\n        \"servingFor\": 2,\n        \"ingredients\": [\n            {\n                \"id\": 30,\n                \"itemName\": \"crème fraîche\",\n                \"description\": \"crème fraîche\",\n                \"amount\": 3,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 31,\n                \"itemName\": \"Dijon mustard\",\n                \"description\": \"Dijon mustard\",\n                \"amount\": 3,\n                \"amountType\": \"TEASPOON\"\n            },\n            {\n                \"id\": 32,\n                \"itemName\": \"Lemon\",\n                \"description\": \"zested and juiced\",\n                \"amount\": 0.5,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 33,\n                \"itemName\": \"broccoli\",\n                \"description\": \"long-stem broccoli, each cut into 3 pieces\",\n                \"amount\": 200,\n                \"amountType\": \"GRAM\"\n            },\n            {\n                \"id\": 34,\n                \"itemName\": \"gnocchi\",\n                \"description\": \"fresh gnocchi\",\n                \"amount\": 350,\n                \"amountType\": \"GRAM\"\n            },\n            {\n                \"id\": 35,\n                \"itemName\": \"olive oil\",\n                \"description\": \"olive oil\",\n                \"amount\": 2,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 36,\n                \"itemName\": \"pea\",\n                \"description\": \"frozen peas\",\n                \"amount\": 100,\n                \"amountType\": \"GRAM\"\n            },\n            {\n                \"id\": 37,\n                \"itemName\": \"nut\",\n                \"description\": \"toasted pine nuts\",\n                \"amount\": 1,\n                \"amountType\": \"TABLESPOON\"\n            }\n        ],\n        \"instructions\": [\n            {\n                \"id\": 17,\n                \"description\": \"Mix together the crème fraîche, mustard and lemon juice. Set aside. Bring a large pan of salted water to the boil. Once boiling, add the broccoli and cook for 3 mins, then tip in the gnocchi. Cook until the gnocchi begins to float to the surface, this will only take 1 min so keep an eye on them, then drain.\",\n                \"sequence\": 1\n            },\n            {\n                \"id\": 18,\n                \"description\": \"Heat the oil in a large non-stick frying pan and, once hot, tip in the gnocchi, broccoli and frozen peas. Toss around in the hot oil for 1 min, then stir through the crème fraîche mixture. Season to taste. Once hot, spoon into bowls and top with the lemon zest and pine nuts.\",\n                \"sequence\": 21\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "list serving for 2 people recipes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/recipe?servingFor=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"recipe"
+					],
+					"query": [
+						{
+							"key": "servingFor",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "list serving for 2 people recipes",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/recipe?servingFor=2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"recipe"
+							],
+							"query": [
+								{
+									"key": "servingFor",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Dec 2022 13:39:47 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"description\": \"Omelet with cheese recipe\",\n        \"name\": \"Omelet\",\n        \"vegetarian\": false,\n        \"servingFor\": 2,\n        \"ingredients\": [\n            {\n                \"id\": 1,\n                \"itemName\": \"Egg\",\n                \"description\": \"Fresh eggs\",\n                \"amount\": 4,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 2,\n                \"itemName\": \"Oil\",\n                \"description\": \"Margarine or sun flower oil\",\n                \"amount\": 2,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 3,\n                \"itemName\": \"Cheese\",\n                \"description\": \"Any type cheese would do.Cheddar is the best\",\n                \"amount\": 50,\n                \"amountType\": \"GRAM\"\n            },\n            {\n                \"id\": 4,\n                \"itemName\": \"Salt\",\n                \"description\": \"Salt\",\n                \"amount\": 1,\n                \"amountType\": \"TEASPOON\"\n            }\n        ],\n        \"instructions\": [\n            {\n                \"id\": 1,\n                \"description\": \"Heat the pan on the stove.\",\n                \"sequence\": 1\n            },\n            {\n                \"id\": 2,\n                \"description\": \"Add Oil to the pan.\",\n                \"sequence\": 2\n            },\n            {\n                \"id\": 3,\n                \"description\": \"Slice the cheese into small pieces.\",\n                \"sequence\": 3\n            },\n            {\n                \"id\": 4,\n                \"description\": \"Add cheese into the pan. Wait for it to melt.\",\n                \"sequence\": 4\n            },\n            {\n                \"id\": 5,\n                \"description\": \"Break the eggs into the pan carefully\",\n                \"sequence\": 5\n            },\n            {\n                \"id\": 6,\n                \"description\": \"Cook 3-5 mins on slight fire.\",\n                \"sequence\": 6\n            },\n            {\n                \"id\": 7,\n                \"description\": \"After that take is from the fire. Add salt. And serve. Bon appetit!\",\n                \"sequence\": 7\n            }\n        ]\n    },\n    {\n        \"id\": 5,\n        \"description\": \"Whip up this tasty vegetarian gnocchi in just 15 minutes. Broccoli, peas and pine nuts combine with crème fraîche and mustard for a tasty midweek meal\",\n        \"name\": \"Creamy broccoli gnocchi\",\n        \"vegetarian\": true,\n        \"servingFor\": 2,\n        \"ingredients\": [\n            {\n                \"id\": 30,\n                \"itemName\": \"crème fraîche\",\n                \"description\": \"crème fraîche\",\n                \"amount\": 3,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 31,\n                \"itemName\": \"Dijon mustard\",\n                \"description\": \"Dijon mustard\",\n                \"amount\": 3,\n                \"amountType\": \"TEASPOON\"\n            },\n            {\n                \"id\": 32,\n                \"itemName\": \"Lemon\",\n                \"description\": \"zested and juiced\",\n                \"amount\": 0.5,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 33,\n                \"itemName\": \"broccoli\",\n                \"description\": \"long-stem broccoli, each cut into 3 pieces\",\n                \"amount\": 200,\n                \"amountType\": \"GRAM\"\n            },\n            {\n                \"id\": 34,\n                \"itemName\": \"gnocchi\",\n                \"description\": \"fresh gnocchi\",\n                \"amount\": 350,\n                \"amountType\": \"GRAM\"\n            },\n            {\n                \"id\": 35,\n                \"itemName\": \"olive oil\",\n                \"description\": \"olive oil\",\n                \"amount\": 2,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 36,\n                \"itemName\": \"pea\",\n                \"description\": \"frozen peas\",\n                \"amount\": 100,\n                \"amountType\": \"GRAM\"\n            },\n            {\n                \"id\": 37,\n                \"itemName\": \"nut\",\n                \"description\": \"toasted pine nuts\",\n                \"amount\": 1,\n                \"amountType\": \"TABLESPOON\"\n            }\n        ],\n        \"instructions\": [\n            {\n                \"id\": 17,\n                \"description\": \"Mix together the crème fraîche, mustard and lemon juice. Set aside. Bring a large pan of salted water to the boil. Once boiling, add the broccoli and cook for 3 mins, then tip in the gnocchi. Cook until the gnocchi begins to float to the surface, this will only take 1 min so keep an eye on them, then drain.\",\n                \"sequence\": 1\n            },\n            {\n                \"id\": 18,\n                \"description\": \"Heat the oil in a large non-stick frying pan and, once hot, tip in the gnocchi, broccoli and frozen peas. Toss around in the hot oil for 1 min, then stir through the crème fraîche mixture. Season to taste. Once hot, spoon into bowls and top with the lemon zest and pine nuts.\",\n                \"sequence\": 21\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "list including ingrediend recipes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/recipe?includingIngrediends=salmon",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"recipe"
+					],
+					"query": [
+						{
+							"key": "includingIngrediends",
+							"value": "salmon"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "list including ingrediend recipes",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/recipe?includingIngrediends=salmon",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"recipe"
+							],
+							"query": [
+								{
+									"key": "includingIngrediends",
+									"value": "salmon"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Dec 2022 13:39:59 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"description\": \"This Oven Baked Salmon is brushed with garlic butter, then sprinkled with a delicious brown sugar spice mix for the perfectly baked, flavorful salmon fillet. This is hands-down the best and easiest way to prepare salmon fillet for dinner!\",\n        \"name\": \"Oven Baked Salmon\",\n        \"vegetarian\": false,\n        \"servingFor\": 4,\n        \"ingredients\": [\n            {\n                \"id\": 5,\n                \"itemName\": \"Salmon\",\n                \"description\": \"A whole Salmon fillet with skin on is recommended!\",\n                \"amount\": 1,\n                \"amountType\": \"KILOGRAM\"\n            },\n            {\n                \"id\": 6,\n                \"itemName\": \"Butter\",\n                \"description\": \"Alternatively olive oil can do too\",\n                \"amount\": 3,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 7,\n                \"itemName\": \"Brown sugar\",\n                \"description\": \"It can be skipped\",\n                \"amount\": 0.5,\n                \"amountType\": \"TEASPOON\"\n            },\n            {\n                \"id\": 8,\n                \"itemName\": \"Garlic\",\n                \"description\": \"Garlic to have unique taste\",\n                \"amount\": 1,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 9,\n                \"itemName\": \"Italian seasoning\",\n                \"description\": \"It can be replaced by other veggies. Oregon or rosemary \",\n                \"amount\": 1,\n                \"amountType\": \"TABLESPOON\"\n            }\n        ],\n        \"instructions\": [\n            {\n                \"id\": 8,\n                \"description\": \"Place the salmon on a piece of foil set on a rimmed baking sheet. Fold the sides slightly up around the salmon, to catch any dripping butter. Combine the minced garlic with the melted butter. Brush about half of it over the salmon.\",\n                \"sequence\": 1\n            },\n            {\n                \"id\": 9,\n                \"description\": \"Combine the spices, then sprinkle them evenly over the salmon. Drizzle with the remaining garlic butter.\",\n                \"sequence\": 2\n            },\n            {\n                \"id\": 10,\n                \"description\": \"Bake the salmon at 375°F for about 15-20 minutes, depending on your preferred doneness. The fish is done when it flakes easily, but is still glossy/shiny – not dull. See further below for some temperature references.\",\n                \"sequence\": 3\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "list excluding ingrediend recipes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/recipe?excludingIngrediends=salmon",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"recipe"
+					],
+					"query": [
+						{
+							"key": "excludingIngrediends",
+							"value": "salmon"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "list excluding ingrediend recipes",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/recipe?excludingIngrediends=salmon",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"recipe"
+							],
+							"query": [
+								{
+									"key": "excludingIngrediends",
+									"value": "salmon"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Dec 2022 13:40:07 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"description\": \"Omelet with cheese recipe\",\n        \"name\": \"Omelet\",\n        \"vegetarian\": false,\n        \"servingFor\": 2,\n        \"ingredients\": [\n            {\n                \"id\": 1,\n                \"itemName\": \"Egg\",\n                \"description\": \"Fresh eggs\",\n                \"amount\": 4,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 2,\n                \"itemName\": \"Oil\",\n                \"description\": \"Margarine or sun flower oil\",\n                \"amount\": 2,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 3,\n                \"itemName\": \"Cheese\",\n                \"description\": \"Any type cheese would do.Cheddar is the best\",\n                \"amount\": 50,\n                \"amountType\": \"GRAM\"\n            },\n            {\n                \"id\": 4,\n                \"itemName\": \"Salt\",\n                \"description\": \"Salt\",\n                \"amount\": 1,\n                \"amountType\": \"TEASPOON\"\n            }\n        ],\n        \"instructions\": [\n            {\n                \"id\": 1,\n                \"description\": \"Heat the pan on the stove.\",\n                \"sequence\": 1\n            },\n            {\n                \"id\": 2,\n                \"description\": \"Add Oil to the pan.\",\n                \"sequence\": 2\n            },\n            {\n                \"id\": 3,\n                \"description\": \"Slice the cheese into small pieces.\",\n                \"sequence\": 3\n            },\n            {\n                \"id\": 4,\n                \"description\": \"Add cheese into the pan. Wait for it to melt.\",\n                \"sequence\": 4\n            },\n            {\n                \"id\": 5,\n                \"description\": \"Break the eggs into the pan carefully\",\n                \"sequence\": 5\n            },\n            {\n                \"id\": 6,\n                \"description\": \"Cook 3-5 mins on slight fire.\",\n                \"sequence\": 6\n            },\n            {\n                \"id\": 7,\n                \"description\": \"After that take is from the fire. Add salt. And serve. Bon appetit!\",\n                \"sequence\": 7\n            }\n        ]\n    },\n    {\n        \"id\": 3,\n        \"description\": \"This shrimp kebab recipe is perfectly grilled with garlic lemon butter marinade.\",\n        \"name\": \"Shrimp Kebab\",\n        \"vegetarian\": false,\n        \"servingFor\": 4,\n        \"ingredients\": [\n            {\n                \"id\": 10,\n                \"itemName\": \"Shrimp\",\n                \"description\": \"Any type of shrimps would be recommended .Frozen, shelled, deveined and tail-on shrimps.\",\n                \"amount\": 500,\n                \"amountType\": \"GRAM\"\n            },\n            {\n                \"id\": 11,\n                \"itemName\": \"Garlic\",\n                \"description\": \"A well dried garlic\",\n                \"amount\": 1,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 12,\n                \"itemName\": \"Butter\",\n                \"description\": \"Replaceable with olive oil\",\n                \"amount\": 2,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 13,\n                \"itemName\": \"Lemon\",\n                \"description\": \"A good big juicy lemon\",\n                \"amount\": 1,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 14,\n                \"itemName\": \"Cayenne Pepper\",\n                \"description\": \"Peppers to decorate with veggies\",\n                \"amount\": 3,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 15,\n                \"itemName\": \"Parsley\",\n                \"description\": \"Decoration vegetables\",\n                \"amount\": 3,\n                \"amountType\": \"PIECE\"\n            }\n        ],\n        \"instructions\": [\n            {\n                \"id\": 11,\n                \"description\": \"Coat and marinate the garlic butter mixture on the shrimp, thread them on skewers or bamboo sticks.\",\n                \"sequence\": 1\n            },\n            {\n                \"id\": 12,\n                \"description\": \"Use indirect heat, it will take 2-3 minutes to cook the entire shrimp, on both sides.\",\n                \"sequence\": 2\n            }\n        ]\n    },\n    {\n        \"id\": 4,\n        \"description\": \"Get children to help you chop the vegetables and make the sauce for this colourful, simple tofu stir-fry. It is perfect when you need a quick and easy family meal\",\n        \"name\": \"Tofu stir-fry\",\n        \"vegetarian\": true,\n        \"servingFor\": 3,\n        \"ingredients\": [\n            {\n                \"id\": 16,\n                \"itemName\": \"Soy Sauce\",\n                \"description\": \"Low-sodium\",\n                \"amount\": 3,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 17,\n                \"itemName\": \"Honey\",\n                \"description\": \"Honey\",\n                \"amount\": 1.5,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 18,\n                \"itemName\": \"white wine vinegar\",\n                \"description\": \"white wine vinegar\",\n                \"amount\": 1,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 19,\n                \"itemName\": \"tofu\",\n                \"description\": \"tofu, cut into chunks\",\n                \"amount\": 300,\n                \"amountType\": \"GRAM\"\n            },\n            {\n                \"id\": 20,\n                \"itemName\": \"sunflower oil\",\n                \"description\": \"sunflower oil\",\n                \"amount\": 2,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 21,\n                \"itemName\": \"garlic\",\n                \"description\": \"garlic cloves, sliced\",\n                \"amount\": 2,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 22,\n                \"itemName\": \"ginger\",\n                \"description\": \"ginger\",\n                \"amount\": 50,\n                \"amountType\": \"GRAM\"\n            },\n            {\n                \"id\": 23,\n                \"itemName\": \"carrot\",\n                \"description\": \"medium size carrots, sliced into thin batons\",\n                \"amount\": 2,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 24,\n                \"itemName\": \"broccoli\",\n                \"description\": \"broccoli, cut into small florets\",\n                \"amount\": 300,\n                \"amountType\": \"GRAM\"\n            },\n            {\n                \"id\": 25,\n                \"itemName\": \"red pepper\",\n                \"description\": \"red pepper, sliced into strips\",\n                \"amount\": 1,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 26,\n                \"itemName\": \"cornflour\",\n                \"description\": \"cornflour\",\n                \"amount\": 1,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 27,\n                \"itemName\": \"spring onion\",\n                \"description\": \"spring onion, sliced\",\n                \"amount\": 1,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 28,\n                \"itemName\": \"sesame\",\n                \"description\": \"sesame seeds\",\n                \"amount\": 2,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 29,\n                \"itemName\": \"coriander\",\n                \"description\": \"small bunch of coriander, chopped\",\n                \"amount\": 50,\n                \"amountType\": \"GRAM\"\n            }\n        ],\n        \"instructions\": [\n            {\n                \"id\": 13,\n                \"description\": \"Stir together the soy sauce, honey and vinegar in a bowl, then set aside.\",\n                \"sequence\": 1\n            },\n            {\n                \"id\": 14,\n                \"description\": \"Pat the tofu chunks dry, then season well. Heat half the oil in a wok or large frying pan over a high heat. Fry the tofu for 5 mins until golden, stirring occasionally. Add the garlic and ginger and fry for 1 min more. Tip the tofu mixture into a bowl, pour over half the soy dressing and set aside.\",\n                \"sequence\": 2\n            },\n            {\n                \"id\": 15,\n                \"description\": \"Add the remaining oil to the wok. Add the vegetables and cook for 5 mins until beginning to turn golden, then add a good splash of water and cook for 3-5 mins more until tender.\",\n                \"sequence\": 3\n            },\n            {\n                \"id\": 16,\n                \"description\": \"Stir the cornflour and 1 tbsp water into the remaining soy dressing, then tip into the wok, allow to bubble for 30 seconds, stirring to coat everything in the sauce. Sprinkle over the spring onion, sesame seeds and coriander. Serve with rice.\",\n                \"sequence\": 4\n            }\n        ]\n    },\n    {\n        \"id\": 5,\n        \"description\": \"Whip up this tasty vegetarian gnocchi in just 15 minutes. Broccoli, peas and pine nuts combine with crème fraîche and mustard for a tasty midweek meal\",\n        \"name\": \"Creamy broccoli gnocchi\",\n        \"vegetarian\": true,\n        \"servingFor\": 2,\n        \"ingredients\": [\n            {\n                \"id\": 30,\n                \"itemName\": \"crème fraîche\",\n                \"description\": \"crème fraîche\",\n                \"amount\": 3,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 31,\n                \"itemName\": \"Dijon mustard\",\n                \"description\": \"Dijon mustard\",\n                \"amount\": 3,\n                \"amountType\": \"TEASPOON\"\n            },\n            {\n                \"id\": 32,\n                \"itemName\": \"Lemon\",\n                \"description\": \"zested and juiced\",\n                \"amount\": 0.5,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 33,\n                \"itemName\": \"broccoli\",\n                \"description\": \"long-stem broccoli, each cut into 3 pieces\",\n                \"amount\": 200,\n                \"amountType\": \"GRAM\"\n            },\n            {\n                \"id\": 34,\n                \"itemName\": \"gnocchi\",\n                \"description\": \"fresh gnocchi\",\n                \"amount\": 350,\n                \"amountType\": \"GRAM\"\n            },\n            {\n                \"id\": 35,\n                \"itemName\": \"olive oil\",\n                \"description\": \"olive oil\",\n                \"amount\": 2,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 36,\n                \"itemName\": \"pea\",\n                \"description\": \"frozen peas\",\n                \"amount\": 100,\n                \"amountType\": \"GRAM\"\n            },\n            {\n                \"id\": 37,\n                \"itemName\": \"nut\",\n                \"description\": \"toasted pine nuts\",\n                \"amount\": 1,\n                \"amountType\": \"TABLESPOON\"\n            }\n        ],\n        \"instructions\": [\n            {\n                \"id\": 17,\n                \"description\": \"Mix together the crème fraîche, mustard and lemon juice. Set aside. Bring a large pan of salted water to the boil. Once boiling, add the broccoli and cook for 3 mins, then tip in the gnocchi. Cook until the gnocchi begins to float to the surface, this will only take 1 min so keep an eye on them, then drain.\",\n                \"sequence\": 1\n            },\n            {\n                \"id\": 18,\n                \"description\": \"Heat the oil in a large non-stick frying pan and, once hot, tip in the gnocchi, broccoli and frozen peas. Toss around in the hot oil for 1 min, then stir through the crème fraîche mixture. Season to taste. Once hot, spoon into bowls and top with the lemon zest and pine nuts.\",\n                \"sequence\": 21\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "list text search in instructions recipes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/recipe?havingWordInInstructions=bake",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"recipe"
+					],
+					"query": [
+						{
+							"key": "havingWordInInstructions",
+							"value": "bake"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "list text search in instructions recipes",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/recipe?havingWordInInstructions=bake",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"recipe"
+							],
+							"query": [
+								{
+									"key": "havingWordInInstructions",
+									"value": "bake"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Dec 2022 13:40:23 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"description\": \"This Oven Baked Salmon is brushed with garlic butter, then sprinkled with a delicious brown sugar spice mix for the perfectly baked, flavorful salmon fillet. This is hands-down the best and easiest way to prepare salmon fillet for dinner!\",\n        \"name\": \"Oven Baked Salmon\",\n        \"vegetarian\": false,\n        \"servingFor\": 4,\n        \"ingredients\": [\n            {\n                \"id\": 5,\n                \"itemName\": \"Salmon\",\n                \"description\": \"A whole Salmon fillet with skin on is recommended!\",\n                \"amount\": 1,\n                \"amountType\": \"KILOGRAM\"\n            },\n            {\n                \"id\": 6,\n                \"itemName\": \"Butter\",\n                \"description\": \"Alternatively olive oil can do too\",\n                \"amount\": 3,\n                \"amountType\": \"TABLESPOON\"\n            },\n            {\n                \"id\": 7,\n                \"itemName\": \"Brown sugar\",\n                \"description\": \"It can be skipped\",\n                \"amount\": 0.5,\n                \"amountType\": \"TEASPOON\"\n            },\n            {\n                \"id\": 8,\n                \"itemName\": \"Garlic\",\n                \"description\": \"Garlic to have unique taste\",\n                \"amount\": 1,\n                \"amountType\": \"PIECE\"\n            },\n            {\n                \"id\": 9,\n                \"itemName\": \"Italian seasoning\",\n                \"description\": \"It can be replaced by other veggies. Oregon or rosemary \",\n                \"amount\": 1,\n                \"amountType\": \"TABLESPOON\"\n            }\n        ],\n        \"instructions\": [\n            {\n                \"id\": 8,\n                \"description\": \"Place the salmon on a piece of foil set on a rimmed baking sheet. Fold the sides slightly up around the salmon, to catch any dripping butter. Combine the minced garlic with the melted butter. Brush about half of it over the salmon.\",\n                \"sequence\": 1\n            },\n            {\n                \"id\": 9,\n                \"description\": \"Combine the spices, then sprinkle them evenly over the salmon. Drizzle with the remaining garlic butter.\",\n                \"sequence\": 2\n            },\n            {\n                \"id\": 10,\n                \"description\": \"Bake the salmon at 375°F for about 15-20 minutes, depending on your preferred doneness. The fish is done when it flakes easily, but is still glossy/shiny – not dull. See further below for some temperature references.\",\n                \"sequence\": 3\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "fetch recipe by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/recipe/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"recipe",
+						"5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "fetch recipe by id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/recipe/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"recipe",
+								"5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Dec 2022 13:46:54 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 5,\n    \"description\": \"Whip up this tasty vegetarian gnocchi in just 15 minutes. Broccoli, peas and pine nuts combine with crème fraîche and mustard for a tasty midweek meal\",\n    \"name\": \"Creamy broccoli gnocchi\",\n    \"vegetarian\": true,\n    \"servingFor\": 2,\n    \"ingredients\": [\n        {\n            \"id\": 30,\n            \"itemName\": \"crème fraîche\",\n            \"description\": \"crème fraîche\",\n            \"amount\": 3,\n            \"amountType\": \"TABLESPOON\"\n        },\n        {\n            \"id\": 31,\n            \"itemName\": \"Dijon mustard\",\n            \"description\": \"Dijon mustard\",\n            \"amount\": 3,\n            \"amountType\": \"TEASPOON\"\n        },\n        {\n            \"id\": 32,\n            \"itemName\": \"Lemon\",\n            \"description\": \"zested and juiced\",\n            \"amount\": 0.5,\n            \"amountType\": \"PIECE\"\n        },\n        {\n            \"id\": 33,\n            \"itemName\": \"broccoli\",\n            \"description\": \"long-stem broccoli, each cut into 3 pieces\",\n            \"amount\": 200,\n            \"amountType\": \"GRAM\"\n        },\n        {\n            \"id\": 34,\n            \"itemName\": \"gnocchi\",\n            \"description\": \"fresh gnocchi\",\n            \"amount\": 350,\n            \"amountType\": \"GRAM\"\n        },\n        {\n            \"id\": 35,\n            \"itemName\": \"olive oil\",\n            \"description\": \"olive oil\",\n            \"amount\": 2,\n            \"amountType\": \"TABLESPOON\"\n        },\n        {\n            \"id\": 36,\n            \"itemName\": \"pea\",\n            \"description\": \"frozen peas\",\n            \"amount\": 100,\n            \"amountType\": \"GRAM\"\n        },\n        {\n            \"id\": 37,\n            \"itemName\": \"nut\",\n            \"description\": \"toasted pine nuts\",\n            \"amount\": 1,\n            \"amountType\": \"TABLESPOON\"\n        }\n    ],\n    \"instructions\": [\n        {\n            \"id\": 17,\n            \"description\": \"Mix together the crème fraîche, mustard and lemon juice. Set aside. Bring a large pan of salted water to the boil. Once boiling, add the broccoli and cook for 3 mins, then tip in the gnocchi. Cook until the gnocchi begins to float to the surface, this will only take 1 min so keep an eye on them, then drain.\",\n            \"sequence\": 1\n        },\n        {\n            \"id\": 18,\n            \"description\": \"Heat the oil in a large non-stick frying pan and, once hot, tip in the gnocchi, broccoli and frozen peas. Toss around in the hot oil for 1 min, then stir through the crème fraîche mixture. Season to taste. Once hot, spoon into bowls and top with the lemon zest and pine nuts.\",\n            \"sequence\": 21\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "add new recipe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"description\": \"A plain omelet recipe\",\n        \"name\": \"Omelet\",\n        \"vegetarian\": false,\n        \"servingFor\": 2,\n        \"ingredients\": [{\n            \"itemName\":\"egg\",\n            \"description\":\"fresh farm eggs\",\n            \"amount\":3,\n            \"amountType\":\"PIECE\"\n        },{\n            \"itemName\":\"oil\",\n            \"description\":\"butter is the best\",\n            \"amount\":2,\n            \"amountType\":\"TABLESPOON\"\n        },{\n            \"itemName\":\"salt\",\n            \"description\":\"salt\",\n            \"amount\":1,\n            \"amountType\":\"TEASPOON\"\n        }],\n        \"instructions\": [{\n            \"description\":\"put oil on a pan. heat it up.\"\n        },{\n            \"description\":\"break eggs creafuly\"\n        },{\n            \"description\":\"cook 3-5 mins\"\n        },{\n            \"description\":\"get it off the fire. add salt put on the plates bon appetit \"\n        }]\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/recipe",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"recipe"
+					]
+				},
+				"description": "Create Recipe"
+			},
+			"response": [
+				{
+					"name": "add new recipe",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\n        \"description\": \"A plain omelet recipe\",\n        \"name\": \"Omelet\",\n        \"vegetarian\": false,\n        \"servingFor\": 2,\n        \"ingredients\": [{\n            \"itemName\":\"egg\",\n            \"description\":\"fresh farm eggs\",\n            \"amount\":3,\n            \"amountType\":\"PIECE\"\n        },{\n            \"itemName\":\"oil\",\n            \"description\":\"butter is the best\",\n            \"amount\":2,\n            \"amountType\":\"TABLESPOON\"\n        },{\n            \"itemName\":\"salt\",\n            \"description\":\"salt\",\n            \"amount\":1,\n            \"amountType\":\"TEASPOON\"\n        }],\n        \"instructions\": [{\n            \"description\":\"put oil on a pan. heat it up.\"\n        },{\n            \"description\":\"break eggs creafuly\"\n        },{\n            \"description\":\"cook 3-5 mins\"\n        },{\n            \"description\":\"get it off the fire. add salt put on the plates bon appetit \"\n        }]\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/recipe",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"recipe"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Dec 2022 14:00:44 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"text\": \"Recipe added successfully!\",\n    \"code\": 200,\n    \"date\": \"13/12/2022 17:00\"\n}"
+				}
+			]
+		},
+		{
+			"name": "update recipe",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 6,\n    \"description\": \"Vegetable omelet recipe\",\n    \"name\": \"Omelet\",\n    \"vegetarian\": false,\n    \"servingFor\": 2,\n    \"ingredients\": [\n        {\n            \"id\": 38,\n            \"itemName\": \"egg\",\n            \"description\": \"fresh farm eggs\",\n            \"amount\": 3.0,\n            \"amountType\": \"PIECE\"\n        },\n        {\n            \"id\": 39,\n            \"itemName\": \"oil\",\n            \"description\": \"butter is the best\",\n            \"amount\": 2.0,\n            \"amountType\": \"TABLESPOON\"\n        },\n        {\n            \"id\": 40,\n            \"itemName\": \"salt\",\n            \"description\": \"salt\",\n            \"amount\": 1.0,\n            \"amountType\": \"TEASPOON\"\n        },\n        {\n            \"itemName\": \"dill\",\n            \"description\": \"dill\",\n            \"amount\": 1,\n            \"amountType\": \"PIECE\"\n        }\n        ,\n        {\n            \"itemName\": \"pepper\",\n            \"description\": \"pepper\",\n            \"amount\": 1,\n            \"amountType\": \"PIECE\"\n        }\n    ],\n    \"instructions\": [\n        {\n            \"id\": 19,\n            \"description\": \"put oil on a pan. heat it up.\",\n            \"sequence\": 1\n        },\n        {\n            \"description\": \"chop dill and pepper. fry together\",\n            \"sequence\": 2\n        },\n        {\n            \"id\": 20,\n            \"description\": \"break eggs creafuly\",\n            \"sequence\": 2\n        },\n        {\n            \"id\": 21,\n            \"description\": \"cook 3-5 mins\",\n            \"sequence\": 3\n        },\n        {\n            \"id\": 22,\n            \"description\": \"get it off the fire. add salt put on the plates bon appetit \",\n            \"sequence\": 4\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/recipe",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"recipe"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update recipe",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 6,\n    \"description\": \"Vegetable omelet recipe\",\n    \"name\": \"Omelet\",\n    \"vegetarian\": false,\n    \"servingFor\": 2,\n    \"ingredients\": [\n        {\n            \"id\": 38,\n            \"itemName\": \"egg\",\n            \"description\": \"fresh farm eggs\",\n            \"amount\": 3.0,\n            \"amountType\": \"PIECE\"\n        },\n        {\n            \"id\": 39,\n            \"itemName\": \"oil\",\n            \"description\": \"butter is the best\",\n            \"amount\": 2.0,\n            \"amountType\": \"TABLESPOON\"\n        },\n        {\n            \"id\": 40,\n            \"itemName\": \"salt\",\n            \"description\": \"salt\",\n            \"amount\": 1.0,\n            \"amountType\": \"TEASPOON\"\n        },\n        {\n            \"itemName\": \"dill\",\n            \"description\": \"dill\",\n            \"amount\": 1,\n            \"amountType\": \"PIECE\"\n        }\n        ,\n        {\n            \"itemName\": \"pepper\",\n            \"description\": \"pepper\",\n            \"amount\": 1,\n            \"amountType\": \"PIECE\"\n        }\n    ],\n    \"instructions\": [\n        {\n            \"id\": 19,\n            \"description\": \"put oil on a pan. heat it up.\",\n            \"sequence\": 1\n        },\n        {\n            \"description\": \"chop dill and pepper. fry together\",\n            \"sequence\": 2\n        },\n        {\n            \"id\": 20,\n            \"description\": \"break eggs creafuly\",\n            \"sequence\": 2\n        },\n        {\n            \"id\": 21,\n            \"description\": \"cook 3-5 mins\",\n            \"sequence\": 3\n        },\n        {\n            \"id\": 22,\n            \"description\": \"get it off the fire. add salt put on the plates bon appetit \",\n            \"sequence\": 4\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/recipe",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"recipe"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Dec 2022 14:20:08 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"text\": \"Recipe updated successfully!\",\n    \"code\": 200,\n    \"date\": \"13/12/2022 17:20\"\n}"
+				}
+			]
+		},
+		{
+			"name": "delete recipe",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/recipe/6",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"recipe",
+						"6"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete recipe",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/recipe/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"recipe",
+								"6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Dec 2022 14:22:16 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"text\": \"Recipe with id : [6] deleted successfully!\",\n    \"code\": 200,\n    \"date\": \"13/12/2022 17:22\"\n}"
+				}
+			]
+		}
+	]
+}
