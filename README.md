@@ -1,4 +1,4 @@
-# ABN AMRO exercise project recipe
+# Spring Boot Exercise project recipe
 
 <h3>Java </h3>
 Platform Java version is 11<br>
